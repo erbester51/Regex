@@ -1,10 +1,12 @@
 # Strong Password Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+Hello and welcome to my tutorial on Regex! This specific tutorial will help you create and verify strong passwords!
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In this tutorial you will learn regex and how it can be used to create and verify strong passwords. Below is an example Regex which checks to make sure a lower case value, upper case value, a numebr from 0-9 and a special character was used and that it is at least 8 characters long:
+
+(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})
 
 ## Table of Contents
 
