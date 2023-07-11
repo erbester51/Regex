@@ -23,8 +23,10 @@ In this tutorial you will learn regex and how it can be used to create and verif
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
+Regular Expressions (Regex) are patterns of characters that are used to match combinations in strings. These patterns consist of one or more character literals, operators or constructs.
 
 ### Anchors
+
 
 ### Quantifiers
 
