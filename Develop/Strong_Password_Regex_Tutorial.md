@@ -30,7 +30,7 @@ For example, if we scramble the example string above:
 
 (?=^.*(?=.*[0-9])[a-z])(?=.*[A-Z]$)(?=.*[^A-Za-z0-9])(?=.{8,})
 
-The ^ indicates that the password must start with an integer for 0-9 and end with a capitalized character set.
+The ^ indicates that the password must start with an integer for 0-9 and the $ indicates that the password should end with a capitalized character set.
 
 ### Quantifiers
 
