@@ -6,11 +6,10 @@ Hello and welcome to my tutorial on Regex! This specific tutorial will help you 
 
 In this tutorial you will learn regex and how it can be used to create and verify strong passwords. Below is an example Regex which checks to make sure a lower case value, upper case value, a numebr from 0-9 and a special character was used and that it is at least 8 characters long:
 
-(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})
+(?=^.*[a-z])(?=.*[A-Z])(?=.*[0-9]).*$(?=.*[^A-Za-z0-9])(?=.{8,})
 
 ## Table of Contents
 
-- [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
@@ -26,7 +25,12 @@ In this tutorial you will learn regex and how it can be used to create and verif
 Regular Expressions (Regex) are patterns of characters that are used to match combinations in strings. These patterns consist of one or more character literals, operators or constructs.
 
 ### Anchors
+In all regular expressions (regex), a ^ indicates what the password string should start with and a $ indicates what the string should end with.
+For example, if we scramble the example string above:
 
+(?=^.*(?=.*[0-9])[a-z])(?=.*[A-Z]$)(?=.*[^A-Za-z0-9])(?=.{8,})
+
+The ^ indicates that the password must start with an integer for 0-9 and end with a capitalized character set.
 
 ### Quantifiers
 
