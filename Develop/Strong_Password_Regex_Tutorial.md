@@ -10,6 +10,7 @@ In this tutorial you will learn regex and how it can be used to create and verif
 
 ## Table of Contents
 
+- [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
@@ -33,6 +34,12 @@ For example, if we scramble the example string above:
 The ^ indicates that the password must start with an integer for 0-9 and the $ indicates that the password should end with a capitalized character set.
 
 ### Quantifiers
+In regex, quantifiers indicate the number of characters or expressions to match in the string.
+Some examples:
+The '*' : Star, Matches 0 or more of the preceding characters
+{8} : Specific Quantifier, Matches from 6 to 10 of the preceding characters
+
+In the example above where the * is placed says that there must be more than 0 of the the characters and integerse and the {8,} says that the password has to be 8 characters long from the characters and integers expressed in the string.
 
 ### OR Operator
 
